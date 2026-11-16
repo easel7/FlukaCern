@@ -1,0 +1,14 @@
+/control/verbose 1
+/process/had/verbose 0
+/process/em/verbose 0
+
+/allXS/outputFileName all_XS_p_BGO
+/allXS/particleName proton
+#/allXS/elementName Pb
+/allXS/nonElementaryMaterialName BGO
+/allXS/numBins 1000
+/allXS/minKineticEnergy 10. GeV
+/allXS/maxKineticEnergy 10. PeV
+
+/run/initialize
+/run/beamOn 0

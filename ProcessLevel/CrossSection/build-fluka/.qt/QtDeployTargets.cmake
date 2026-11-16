@@ -1,0 +1,3 @@
+set(__QT_DEPLOY_TARGETS "HadronNucleusXS")
+set(__QT_DEPLOY_TARGET_HadronNucleusXS_FILE /Users/xiongzheng/software/geant4/examples/extended/hadronic/FlukaCern/ProcessLevel/CrossSection/build-fluka/HadronNucleusXS)
+set(__QT_DEPLOY_TARGET_HadronNucleusXS_TYPE EXECUTABLE)
