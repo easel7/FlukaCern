@@ -193,6 +193,14 @@ void initialize(G4bool activateCoalescence,
     phycrd_(what.data(), cpp_to_fortran::convertStringNoSizeNeeded(sdum).data(), 8);
   }
 
+  // Enable FLUKA transport and final-state generation for light-ion beams
+  // (deuteron through alpha) before initializing the event generators.
+  what.fill(ZERZER);
+  what[0] = -6.;
+  sdum = "IONTRANS";
+  G4cout << "CALL PHYCRD, sdum = " << sdum << G4endl;
+  phycrd_(what.data(), cpp_to_fortran::convertStringNoSizeNeeded(sdum).data(), 8);
+
   // INITIALIZES THE FLUKA QUARK MODELS AND EVAPORATION MODULE
   G4cout << "CALL EVVINI" << G4endl;
   sdum = "DUMMY";
